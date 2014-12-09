@@ -2,6 +2,8 @@
 
 A tiny module to turn your textarea into a WYSIWYG editor.
 
+[Demo @RequireBin](http://requirebin.com/?gist=0819767d580c1f049b34)
+
 ## Install
 
 ```bash
