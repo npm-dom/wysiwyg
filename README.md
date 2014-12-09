@@ -29,6 +29,7 @@ editor.read()
 When you call it passing a textarea element, it'll:
 
 * Hide the textarea element
+* Create an editable wysiwyg element (a.k.a [content-editable iframe](http://github.com/npm-dom/make-editable))
 * Copy the current value of the textarea element to the wysiwyg box
 * Update the textarea value as make changes on the editor
 
