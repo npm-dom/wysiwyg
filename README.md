@@ -18,7 +18,10 @@ var editor = wysiwyg(document.querySelector('textarea'))
 editor.selectAll()
 editor.bold()
 editor.color("pink")
-editor.link("hello world!")
+editor.link("foobar.com")
+
+editor.read()
+// => <b><a href="foobar.com" style="color: pink">hello world</a></b>
 ```
 
 When you call it passing a textarea element, it'll:
