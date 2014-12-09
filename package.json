@@ -1,6 +1,6 @@
 {
   "name": "wysiwyg",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "A tiny module to provide users a WYSIWYG editor",
   "main": "index.js",
   "scripts": {
