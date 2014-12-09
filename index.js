@@ -1,6 +1,7 @@
 var editable = require("make-editable");
 var pubsub = require("pubsub");
 var debounce = require("debounce-fn");
+var classes = require("dom-classes");
 
 var counter = 1;
 
@@ -12,13 +13,18 @@ function create (textarea) {
 
   api.iframe = iframe;
   api.onUpdate = pubsub();
+  api.read = read;
 
   watch(api, function () {
-    textarea.value = iframe.contentWindow.document.body.innerHTML;
+    textarea.value = read();
     api.onUpdate.publish();
   });
 
   return api;
+
+  function read () {
+    return iframe.contentWindow.document.body.innerHTML;
+  };
 }
 
 function replace (textarea) {
@@ -30,6 +36,14 @@ function replace (textarea) {
   textarea.parentNode.insertBefore(iframe, textarea);
 
   iframe.contentWindow.document.body.innerHTML = textarea.value;
+
+  iframe.contentWindow.addEventListener('focus', function () {
+    classes.add(iframe, 'focus');
+  }, false);
+
+  iframe.contentWindow.addEventListener('blur', function () {
+    classes.remove(iframe, 'focus');
+  }, false);
 
   return iframe;
 }

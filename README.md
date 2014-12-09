@@ -32,6 +32,14 @@ When you call it passing a textarea element, it'll:
 * Copy the current value of the textarea element to the wysiwyg box
 * Update the textarea value as make changes on the editor
 
+**Listening Updates**
+
+```js
+editor.onUpdate(function () {
+  console.log('content updated')
+})
+```
+
 ## Reference
 
 See [make-editable](http://github.com/npm-dom/make-editable)

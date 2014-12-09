@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "debounce-fn": "0.0.0",
+    "dom-classes": "0.0.1",
     "make-editable": "0.0.0",
     "pubsub": "^1.0.2"
   }
