@@ -1,0 +1,29 @@
+{
+  "name": "wysiwyg",
+  "version": "0.0.0",
+  "description": "A tiny module to provide users a WYSIWYG editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "wysiwyg",
+    "content editable",
+    "editor",
+    "html"
+  ],
+  "repository": {
+    "url": "git@github.com:npm-dom/wysiwyg.git",
+    "type": "git"
+  },
+  "author": "azer",
+  "license": "BSD",
+  "devDependencies": {
+    "prova": "^2.1.1"
+  },
+  "dependencies": {
+    "debounce-fn": "0.0.0",
+    "make-editable": "0.0.0",
+    "pubsub": "^1.0.2"
+  }
+}
