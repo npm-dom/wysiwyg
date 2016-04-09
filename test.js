@@ -1,5 +1,5 @@
 var wysiwyg = require("./");
-var test = require("prova");
+var test = require("tape");
 
 test('adding an editor', function (t) {
   t.plan(1);

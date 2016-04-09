@@ -4,7 +4,7 @@
   "description": "A tiny module to provide users a WYSIWYG editor",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "browserify test.js | tape-run"
   },
   "keywords": [
     "wysiwyg",
@@ -19,7 +19,9 @@
   "author": "azer",
   "license": "BSD",
   "devDependencies": {
-    "prova": "^2.1.1"
+    "browserify": "13.0.0",
+    "tape": "4.5.1",
+    "tape-run": "2.1.3"
   },
   "dependencies": {
     "debounce-fn": "0.0.0",
